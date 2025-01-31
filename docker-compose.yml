@@ -1,0 +1,8 @@
+services:
+  wordcount_frontend:
+    build: ./frontend
+    container_name: wordcount_frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
